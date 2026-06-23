@@ -1346,14 +1346,14 @@ header.nav.scrolled {
 }
 
 .faq-q .pm {
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: var(--green-tint);
   color: var(--green);
   display: grid;
   place-items: center;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   flex: none;
   transition: .3s
 }

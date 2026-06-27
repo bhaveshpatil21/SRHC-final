@@ -10,27 +10,25 @@ const WA_NUMBER = "918591371535";
 })();
 
 /* ---------- TEAM GRID (only runs on team.html) ---------- */
-const specialists = [
-  ["Dr. Abhinandan Jadhav", "General Surgeon", "General Surgical procedures"],
+/* const specialists = [
+  ["Dr. Abhinandan Jadhav", "General Surgeon", " "],
   ["Dr. Rahil Ansari", "Neurologist", "Headaches, migraine, epilepsy & nerve disorders."],
   ["Dr. Tejas Hankare", "Psychiatrist", "Anxiety, depression & mental wellness support."],
   ["Dr. Sujata Lipare", "Gynaecologist", "Women's health, maternity & reproductive care."],
   ["Dr. Yogin Patel", "Orthopaedic / Spine Surgeon", "Bones, joints, fractures & sports injuries."],
   ["Disha Manchekar and Natasha Tafti", "Psychologist", "Complete Mobility & rehabilitation"],
   ["Dr. Manali Sawant", "Physiotherapist", "Rehabilitation, mobility & pain relief."],
-  /* ["Cardiologist", "Heart health, BP & cardiac screening."], */
-  /* ["Dietitian / Nutritionist", "Personalised diet plans & weight management."] */
 ];
 const tg = document.getElementById('teamGrid');
 if (tg) {
   tg.innerHTML = specialists.map(s => `
     <div class="doc reveal">
-      <div class="av"><span class="ring"></span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4.5"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+      <div class="av">
+        <img class="" width="" height="" src="${s[4]}" alt="logo">
       </div>
       <div class="bd"><h3>${s[0]}</h3><div class="role">${s[1]}</div><p>${s[2]}</p></div>
     </div>`).join('');
-}
+} */
 
 /* ---------- REVEAL ANIMATIONS ---------- */
 const io = new IntersectionObserver(es => {
